@@ -1,0 +1,6 @@
+# robots.txt for Vikash Mehndi Art
+User-agent: *
+Allow: /
+
+# Sitemap configuration for search engines
+Sitemap: https://vikashmehndiart.com/sitemap.xml

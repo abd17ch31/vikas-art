@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-burgundy: #541820;
+    --color-wine: #3A1017;
+    --color-champagne: #E9D8B8;
+    --color-ivory: #F5EEE6;
+    --color-gold: #C5A15A;
+    --color-dark-text: #382326;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    color: var(--color-dark-text);
+    background-color: #ffffff;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-sans {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Subtle Floating Gold Leaf Particles */
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.55;
+  }
+  80% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translateY(-90px) translateX(35px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.animate-gold-particle {
+  animation: floatParticle 9s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Subtle Scroll Line Pulse */
+@keyframes scrollLinePulse {
+  0%, 100% {
+    transform: scaleY(0.4);
+    transform-origin: top;
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 0.9;
+  }
+}
+
+.animate-scroll-pulse {
+  animation: scrollLinePulse 2.2s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Timeline Marker Expanding Wave */
+@keyframes markerWave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.85;
+  }
+  60% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.animate-marker-wave {
+  animation: markerWave 2.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  will-change: transform, opacity;
+}
+
+/* Accessible Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-gold-particle,
+  .animate-scroll-pulse,
+  .hero-slide-transition {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
