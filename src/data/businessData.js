@@ -5,7 +5,8 @@ import heroWeddingScene from '../assets/images/homepage/image3.png';
 
 import catPortraitMehndi from '../assets/images/cat_portrait_mehndi_1791792921303.jpg';
 import catBridalMehndi from '../assets/images/cat_bridal_mehndi_1791792933575.jpg';
-import catGroomMehndi from '../assets/images/cat_groom_mehndi_1791792943764.jpg';
+import catTraditionalMehndi from '../assets/images/style_traditional_mehndi_1791806882051.jpg';
+import catCustomMehndi from '../assets/images/style_customise_design_1791806822254.jpg';
 import catEngagementMehndi from '../assets/images/cat_engagement_mehndi_1791792958245.jpg';
 import catFamilyMehndi from '../assets/images/cat_family_mehndi_1791792971328.jpg';
 
@@ -95,46 +96,13 @@ export const businessData = {
     },
   ],
   celebrationCategories: [
-    {
-      id: 'portrait-mehndi',
-      title: 'PORTRAIT MEHNDI',
-      image: catPortraitMehndi,
-      alt: 'Close-up of bridal palm showing delicate miniature bride and groom portrait drawn in dark mehndi henna',
-      url: '/categories/portrait-mehndi',
-      focalPoint: 'center center',
-    },
-    {
-      id: 'bridal-mehndi',
-      title: 'BRIDAL MEHNDI',
-      image: catBridalMehndi,
-      alt: 'Elaborate bridal hands and arms covered in intricate traditional henna motifs with gold kundan bangles',
-      url: '/categories/bridal-mehndi',
-      focalPoint: 'center center',
-    },
-    {
-      id: 'groom-mehndi',
-      title: 'GROOM MEHNDI',
-      image: catGroomMehndi,
-      alt: 'Refined minimalist traditional groom mehndi design on hands wearing royal ivory wedding sherwani',
-      url: '/categories/groom-mehndi',
-      focalPoint: 'center center',
-    },
-    {
-      id: 'engagement-mehndi',
-      title: 'ENGAGEMENT MEHNDI',
-      image: catEngagementMehndi,
-      alt: 'Bride-to-be displaying graceful engagement mehndi and diamond ring held lovingly during ceremony',
-      url: '/categories/engagement-mehndi',
-      focalPoint: 'center center',
-    },
-    {
-      id: 'family-and-guest-mehndi',
-      title: 'FAMILY AND GUEST MEHNDI',
-      image: catFamilyMehndi,
-      alt: 'Group of wedding guests and family women joyfully displaying decorated mehndi henna hands together',
-      url: '/categories/family-and-guest-mehndi',
-      focalPoint: 'center center',
-    },
+    { id: 'bridal', title: 'Bridal', image: catBridalMehndi, alt: 'Bridal Mehndi Designs', url: '/gallery#bridal' },
+    { id: 'portrait', title: 'Portrait', image: catPortraitMehndi, alt: 'Portrait Mehndi Designs', url: '/gallery#portrait' },
+    { id: 'engagement', title: 'Engagement', image: catEngagementMehndi, alt: 'Engagement Mehndi Designs', url: '/gallery#engagement' },
+    { id: 'traditional', title: 'Traditional', image: catTraditionalMehndi, alt: 'Traditional Mehndi Designs', url: '/gallery#traditional' },
+    { id: 'festival', title: 'Festival', image: catFamilyMehndi, alt: 'Festival Mehndi Designs', url: '/gallery#festival' },
+    { id: 'guest', title: 'Guest', image: catFamilyMehndi, alt: 'Guest Mehndi Designs', url: '/gallery#guest' },
+    { id: 'custom', title: 'Custom', image: catCustomMehndi, alt: 'Custom Mehndi Designs', url: '/gallery#custom' },
   ],
   bridalPackages: [
     {

@@ -5,12 +5,23 @@ const localImages = import.meta.glob(
 
 const categoryFolders = [
   { category: 'Bridal', folders: ['bridal'] },
-  { category: 'Traditional', folders: ['Traditional'] },
   { category: 'Portrait', folders: ['Portrait'] },
   { category: 'Engagement', folders: ['Engagement'] },
+  { category: 'Traditional', folders: ['Traditional'] },
   { category: 'Festival', folders: ['Festival'] },
   { category: 'Guest', folders: ['Guest'] },
-  { category: 'Custom Designs', folders: ['Custom'] },
+  { category: 'Custom', folders: ['Custom'] },
+];
+
+export const galleryCategories = [
+  'All Designs',
+  'Bridal',
+  'Portrait',
+  'Engagement',
+  'Traditional',
+  'Festival',
+  'Guest',
+  'Custom',
 ];
 
 export const galleryImages = categoryFolders.flatMap(({ category, folders }) => {
@@ -39,10 +50,4 @@ export const galleryImages = categoryFolders.flatMap(({ category, folders }) => 
     };
   });
 });
-
-export const galleryCategories = [
-  'All Designs',
-  ...categoryFolders.map(({ category }) => category),
-];
-
 export default galleryImages;
