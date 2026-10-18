@@ -46,8 +46,9 @@ export default function SelectionCart({
   if (!isOpen) return null;
 
   const handleSendWhatsApp = () => {
-    if (!whatsappUrl || itemCount === 0) return;
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    const { url } = generateWhatsAppCartUrl(selectedItems);
+    if (!url || itemCount === 0) return;
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
